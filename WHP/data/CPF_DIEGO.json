@@ -1,0 +1,47 @@
+[
+    {
+    "level": 5,
+    "name": "CPF DIEGO ELINA",
+    "id": "YbXPlRI8Tqc",
+    "parent": {
+      "id": "sd2f9DpA3Ra"
+    },
+    "phone":"+261320747088"
+  },
+  {
+    "level": 5,
+    "name": "CPF DIEGO GABRIELLE",
+    "id": "rNS0Wpo4FHN",
+    "parent": {
+      "id": "sd2f9DpA3Ra"
+    },
+    "phone":"+261320747098"
+  },
+  {
+    "level": 5,
+    "name": "CPF DIEGO FLORIDA",
+    "id": "uM9ujNMx4Yd",
+    "parent": {
+      "id": "sd2f9DpA3Ra"
+    },
+    "phone":"+261320747089"
+  },
+{
+    "level": 5,
+    "name": "CPF DIEGO ADELETTE",
+    "id": "cDICXHWIo2q",
+    "parent": {
+      "id": "sd2f9DpA3Ra"
+    },
+    "phone":"+261320747097"
+  },
+  {
+    "level": 5,
+    "name": "CPF DIEGO ANGELINA",
+    "id": "iPwM666E63Y",
+    "parent": {
+      "id": "sd2f9DpA3Ra"
+    },
+    "phone":"+261320747099"
+  }
+]

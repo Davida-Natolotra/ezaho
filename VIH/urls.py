@@ -1,0 +1,38 @@
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('VIH/cible/', views.CibleListCreateView.as_view(), name='cible liste'),
+    path("VIH/cible/<int:pk>/", views.CibleDetailUpdateView.as_view(), name=""),
+    path("VIH/PSensibilisation/", views.PSensibilisationListCreateView.as_view()),
+    path("VIH/PSensibilisation/<int:pk>/",
+         views.PSensibilisationDetailUpdateView.as_view(), name=""),
+    path("VIH/TypeDemande/", views.TypeDemandeListCreateView.as_view(),
+         name="type demande"),
+    path("VIH/TypeDemande/<int:pk>/",
+         views.TypeDemandeDetailUpdateView.as_view(), name="type demande"),
+    path("VIH/Sexe/", views.SexeListCreateView.as_view()),
+    path("VIH/Sexe/<int:pk>/", views.SexeDetailUpdateView.as_view(), name="sexe"),
+    path("VIH/CSB/", views.CsbListCreateView.as_view(), name="csb"),
+    path("VIH/CSB/<int:pk>/", views.CsbDetailUpdateView.as_view(), name="csb"),
+    path("VIH/PE/", views.PEListCreateView.as_view()),
+    path("VIH/PE/<int:pk>/", views.PEDetailUpdateView.as_view()),
+    path("VIH/DIC_Meva/", views.DICMevaListCreateView.as_view()),
+    path("VIH/DIC_Meva/<int:pk>/", views.DICMevaDetailUpdateView.as_view()),
+    path("VIH/Referent/", views.ReferentListCreateView.as_view()),
+    path("VIH/Referent/<int:pk>/",
+         views.ReferentDetailUpdateView.as_view(), name="referent"),
+    path("VIH/collecte/", views.CollecteListCreateView.as_view()),
+    path("VIH/collecte/<int:pk>/", views.CollecteDetailUpdateView.as_view()),
+    path("VIH/mycollecte/", views.MyCollecteList.as_view()),
+    path("VIH/mycollecte/create", views.createMyCollection),
+    path('VIH/GraphTDemande/', views.GraphTDemande),
+    path('VIH/PieDemande/', views.PieDemande),
+    path('VIH/collectes/', views.Date_Range_API, name='collectes'),
+    path('VIH/Distribution_Intrant', views.Distribution_Intrant_Create.as_view()),
+    path('VIH/ListDistribByYear', views.ListDistribByYear),
+    path('VIH/Intrant_Liste', views.Intrant_Liste.as_view()),
+    path('VIH/Distribution_Intrant_Create',
+         views.Distribution_Intrant_Create.as_view()),
+    path('VIH/Liste_Mois', views.Liste_Mois)
+]
